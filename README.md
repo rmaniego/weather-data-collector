@@ -2,4 +2,5 @@
 API Requests Demo for ESci 126 Computer Fundamentals and Programming
 
 # Initial Setup
-Run in command line: `pip install -r requirements.txt`
+1. Create and/or activate a virtual environment.
+2. Run in command line: `pip install -r requirements.txt`
