@@ -5,6 +5,9 @@ import requests
 def main():
     
     print("\n[West Pacific Satellite Image Downloader (Himawari)]")
+    
+    if not os.path.exists("datasets"):
+        os.mkdir("datasets")
 
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H")
     filepath = f"datasets/{current_datetime}-himawari.gif"
