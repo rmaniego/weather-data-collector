@@ -6,11 +6,11 @@ def main():
     
     print("\n[West Pacific Satellite Image Downloader (Himawari)]")
     
-    if not os.path.exists("datasets"):
-        os.mkdir("datasets")
+    if not os.path.exists("datasets/himawari/"):
+        os.makedirs("datasets/himawari/")
 
     current_datetime = datetime.now().strftime("%Y-%m-%d_%H")
-    filepath = f"datasets/{current_datetime}-himawari.gif"
+    filepath = f"datasets/himawari/{current_datetime}-himawari.gif"
     
     if os.path.exists(filepath):
         print("\nThe file already exist, try again tomorrow.")
