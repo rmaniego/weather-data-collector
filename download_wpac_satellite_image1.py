@@ -7,7 +7,7 @@ def main():
     print("\n[West Pacific Satellite Image Downloader]")
     
     if not os.path.exists("datasets/accuweather"):
-        os.mkdir("datasets/accuweather")
+        os.makedirs("datasets/accuweather")
 
     current_datetime = datetime.now().strftime("%Y-%m-%d")
     filepath = f"datasets/accuweather/{current_datetime}.jpg"
